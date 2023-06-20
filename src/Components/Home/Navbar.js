@@ -6,7 +6,6 @@ import styled from '@emotion/styled';
 import Badge from '@mui/material/Badge';
 import { Box, margin } from '@mui/system';
 import '../../index.css'
-import './Navbar.css'
 import {Link, useLocation } from 'react-router-dom';
 import {auth} from '../../Config/firebase';
 import { useNavigate } from 'react-router-dom';
