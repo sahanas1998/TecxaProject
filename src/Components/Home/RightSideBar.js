@@ -22,12 +22,12 @@ const RightSideBar = () => {
            Product Sale Chart
         </Typography>
         <Stack direction="row" spacing={2}>
-          <div className='grid grid-cols-2 gap-8 text-blue-800 text-center pb-4'>
+          <div className='grid grid-cols-2 gap-14 text-center pb-4'>
         <Typography variant="body2" component="div">
-          <h1>$5620</h1><h1>Online Salesss</h1>
+          <h1>$5620</h1><h1 className='text-gray-500'>Online Sales</h1>
         </Typography>
         <Typography variant="body2" component="div">
-         <h1>$2350</h1><h1>Offline Salesss</h1>
+         <h1>$2350</h1><h1 className='text-gray-500'>Offline Sales</h1>
         </Typography>
         </div>
          </Stack>

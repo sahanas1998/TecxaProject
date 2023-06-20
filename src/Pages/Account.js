@@ -1,5 +1,3 @@
-import { Diversity1Sharp } from "@mui/icons-material"
-
 export const Account = () => {
     return(
         <div>

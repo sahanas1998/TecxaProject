@@ -46,7 +46,7 @@ const LeftSideBar = () => {
       <CardContent>
         <Typography variant="h6" component="div" class="flex flex-row m-5">
           <ErrorIcon color='primary'/>
-          <h1 class='pl-2'>ISO 9001 pre</h1>
+          <h1 class='pl-2 font-medium'>ISO 9001 pre</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div>
@@ -77,7 +77,7 @@ const LeftSideBar = () => {
       <CardContent>
         <Typography variant="h6" component="div"  class="flex flex-row m-5">
           <PermIdentityIcon color='primary'/>
-          <h1 class='pl-2 pb-8'>Reputation level</h1>
+          <h1 class='pl-2 pb-8 font-medium'>Reputation level</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div className='grid grid-cols-3 gap-12 text-blue-800 text-center'>
