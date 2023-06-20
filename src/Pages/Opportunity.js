@@ -1,7 +1,7 @@
 export const Opportunity = () => {
     return(
-        <idv>
+        <div>
             <h1>This is Opportunity pages</h1>
-        </idv>
+        </div>
     )
 }

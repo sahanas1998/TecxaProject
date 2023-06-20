@@ -41,7 +41,7 @@ const Main = () => {
         <CardItem title="Set Delivery" description="Send orders quickly and easily by setting delivery services now" color="#9c27b0" action={ <Button endIcon={<SendIcon/>} sx={{ backgroundColor: '#f3e5f5', borderRadius: 7, color: "#9c27b0", padding: 1.5 }}>
   Fill in this detail
        </Button>} />
-        <CardItem title="Set Bankdddd Account" description="Cash but your earning earsily by selling your bank account information" color="#512da8" action={<div class='flex flex-row  gap-2 pl-4'>
+        <CardItem title="Set Bank Account" description="Cash but your earning earsily by selling your bank account information" color="#512da8" action={<div class='flex flex-row  gap-2 pl-4'>
        <CheckCircleSharpIcon/>
        <h4>Completed</h4>
        </div>} />

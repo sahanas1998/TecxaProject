@@ -1,7 +1,7 @@
 export const Presales = () => {
     return(
-        <idv>
+        <div>
             <h1>This is presales pages</h1>
-        </idv>
+        </div>
     )
 }

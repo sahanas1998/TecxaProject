@@ -1,7 +1,9 @@
+import { Diversity1Sharp } from "@mui/icons-material"
+
 export const Account = () => {
     return(
-        <idv>
+        <div>
             <h1>This is Account pages</h1>
-        </idv>
+        </div>
     )
 }

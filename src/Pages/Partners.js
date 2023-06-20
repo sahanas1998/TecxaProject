@@ -1,7 +1,7 @@
 export const Partners = () => {
     return(
-        <idv>
+        <div>
             <h1>This is Partners pages</h1>
-        </idv>
+        </div>
     )
 }

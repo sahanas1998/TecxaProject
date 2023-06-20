@@ -1,7 +1,7 @@
 export const Subscription = () => {
     return(
-        <idv>
+        <div>
             <h1>This is Subscription pages</h1>
-        </idv>
+        </div>
     )
 }

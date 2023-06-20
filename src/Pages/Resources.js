@@ -1,7 +1,7 @@
 export const Resources = () => {
     return(
-        <idv>
+        <div>
             <h1>This is Resources pages</h1>
-        </idv>
+        </div>
     )
 }
