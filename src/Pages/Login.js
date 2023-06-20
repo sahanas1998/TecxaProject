@@ -16,9 +16,9 @@ export const Login = () => {
         navigate("/home");
     }
     return(
-        <div className='text-base text-center leading-loose'>
+        <div className='text-base text-center leading-loose m-16 text-5xl'>
             <h2 className='text-xl font-bold'><CameraIcon />STARBUCKS</h2>
-            <h1>Login To the system</h1>
+            <h1>Login To The System</h1>
             <Button variant="outlined" onClick={signInWithGoogle}>Sign In with Google</Button>
         </div>
     );

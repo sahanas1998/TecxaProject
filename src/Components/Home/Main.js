@@ -30,7 +30,14 @@ const CardItem = ({ title, description, color }) => {
 
 const Main = () => {
   return (
-    <div style={{ overflowY: 'auto' }}>
+    <div style={{ overflowY: 'scroll', scrollbarWidth: 'none', '-ms-overflow-style': 'none' }}>
+            <style>
+        {`
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+      </style>
       <div className="flex flex-row text-left space-x-16" >
         <CardItem title="Set Delivery" description="Send orders quickly and easily by setting delivery services now" color="#9c27b0" />
         <CardItem title="Set Bankdddd Account" description="Cash but your earning earsily by selling your bank account information" color="#512da8" />
