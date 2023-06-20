@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family:'Roboto';
+  margin: 0;
+}
+
+.logoName{
+  font-size: 6px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile{
+  border-radius: 50%;
+}
