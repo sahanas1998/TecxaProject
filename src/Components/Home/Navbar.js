@@ -16,11 +16,13 @@ import CameraIcon from '@mui/icons-material/Camera';
 const StyledAppBar = styled(AppBar)({
     backgroundColor: ' rgb(241 245 249)', // Change the background color here
     color:'black',
+    padding:12
+    
   });
 
 const StyledToolbar = styled(Toolbar)({
     display:'flex',
-    justifyContent:'space-between'
+    justifyContent:'space-between',
 })
 
 const Navbar = () => {
@@ -31,7 +33,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const userSignOut = async () => {
-      alert("Log out the system")
+      alert("Log out to the system")
       await signOut(auth);
       localStorage.clear();
       navigate("/login");

@@ -16,9 +16,9 @@ const RightSideBar = () => {
     <div>
       <div class="flex flex-row ...">
         <div>
-        <Card sx={{ minWidth: 240 , minHeight :120 , borderRadius:10 , textAlign:start ,marginLeft:6}} >
+        <Card sx={{ minWidth: 240 , minHeight :120 , borderRadius:10, marginLeft:6 }} >
       <CardContent>
-        <Typography variant="h5" component="div">
+        <Typography variant="h5" component="div" sx={{textAlign:start}}>
            Product Sale Chart
         </Typography>
         <Stack direction="row" spacing={2}>
@@ -46,7 +46,7 @@ const RightSideBar = () => {
         </div>
       </div>
       <div class="flex flex-row ...">
-      <Box sx={{display: 'flex',flexWrap: 'wrap','& > :not(style)': {m: 1,width: 240,height: 240,marginLeft:6},}}>
+      <Box sx={{display: 'flex', marginTop:3, marginLeft:6,flexWrap: 'wrap','& > :not(style)': {width: 240,height: 247}}}>
         <Paper sx={{ backgroundColor: '#5c6bc0' }}>
         <CardItem title="Sold" price="1890" value="+11%" icon={<DataThresholdingIcon/>} />
         </Paper>

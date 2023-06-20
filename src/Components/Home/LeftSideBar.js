@@ -20,6 +20,7 @@ import StarsOutlinedIcon from '@mui/icons-material/StarsOutlined';
 import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 import PollIcon from '@mui/icons-material/Poll';
 import SellIcon from '@mui/icons-material/Sell';
+import { BorderAll } from '@mui/icons-material';
 
 export const CardItem = ({ title, price, value , icon}) => {
   return (
@@ -39,12 +40,13 @@ export const CardItem = ({ title, price, value , icon}) => {
 const LeftSideBar = () => {
   return (
     <div>
-      <div class="flex flex-row space-x-4 ...">
+      <div class="flex">
         <div>
-        <Card sx={{ minWidth: 450 , minHeight :250 , borderRadius:10 , textAlign:start, marginRight:5}}>
+        <Card sx={{ minWidth: 485, minHeight: 270 , borderRadius:10 }}>
       <CardContent>
-        <Typography variant="h5" component="div">
-          <ErrorIcon color='primary'/>ISO 9001 pre
+        <Typography variant="h4" component="div" class="flex flex-row m-4">
+          <ErrorIcon color='primary'/>
+          <h1>ISO 9001 pre</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div>
@@ -52,18 +54,18 @@ const LeftSideBar = () => {
           <img src='https://us.123rf.com/450wm/rubelhossain/rubelhossain2010/rubelhossain201001483/157735065-diagramas-de-porcentaje-de-c%C3%ADrculo-del-98-porcentaje-del-98-listo-para-usar-para-dise%C3%B1o-web.jpg?ver=6' height="170" width="170"/>
           </Typography>
           </div>
-          <div className='grid grid-cols-2 gap-2 text-blue-800 '>
-        <Typography variant="body2" component="div">
-          <AccessTimeIcon/><h1>Customer</h1><h1>130</h1>
+          <div className='grid grid-cols-2 gap-2 '>
+        <Typography variant="body2" >
+          <AccessTimeIcon color='primary'/><p className='text-current'>Customer</p><h1>130</h1>
         </Typography>
-        <Typography variant="body2" component="div">
-         <AvTimerIcon/><h1>Delivery time</h1><h1>2-3 days</h1>
+        <Typography variant="body2" >
+         <AvTimerIcon color='primary' /><p>Delivery time</p><h1>2-3 days</h1>
         </Typography>
-        <Typography variant="body2" component="div">
-          <ThumbUpIcon/><h1>Good Feedback</h1><h1>1505</h1>
+        <Typography variant="body2" >
+          <ThumbUpIcon color='primary'/><p>Good Feedback</p><h1>1505</h1>
         </Typography>
-        <Typography variant="body2" component="div">
-          <ThumbDownAltIcon/><h1>Bad Feedback</h1><h1>10</h1>
+        <Typography variant="body2">
+          <ThumbDownAltIcon color='primary'/><p>Bad Feedback</p><h1>10</h1>
         </Typography>
         </div>
          </Stack>
@@ -71,7 +73,7 @@ const LeftSideBar = () => {
     </Card>
         </div>
         <div>
-        <Card sx={{ minWidth: 250 , minHeight :250 , borderRadius:10 , textAlign:'start'}}>
+        <Card sx={{ minWidth: 250 , minHeight :270 , borderRadius:10, marginLeft:8}}>
       <CardContent>
         <Typography variant="h5" component="div">
           <PermIdentityIcon color='primary'/>Reputation level
@@ -101,7 +103,7 @@ const LeftSideBar = () => {
       </div>
       <div className="flex flex-row">
       <Box
-        sx={{display: 'flex',flexWrap: 'wrap','& > :not(style)': {width: 240,height: 300,marginTop:5,marginLeft:3},}}>
+        sx={{display: 'flex',flexWrap: 'wrap','& > :not(style)': {width: 250,height: 300,marginTop:5,marginLeft:3},}}>
         <Paper sx={{ backgroundColor: '#5c6bc0' }}>
         <CardItem title="Order" price="187" value="+11%" icon={<AutoAwesomeMotionIcon/>} />
         </Paper>
