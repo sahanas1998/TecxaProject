@@ -7,23 +7,32 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import SendIcon from '@mui/icons-material/Send';
 import CheckCircleSharpIcon from '@mui/icons-material/CheckCircleSharp';
+import Stack from '@mui/material/Stack';
 
 const CardItem = ({ title, description, color , action , size }) => {
   return (
-    <Card sx={{ minWidth: 485, minHeight: 200, borderRadius: 8, backgroundColor: color, color: "#f3e5f5" , marginTop:4 , padding:4}}>
-      <CardContent>
-        <Typography variant="h5">
-          {title}
-        </Typography>
-        <br/>
-        <Typography variant="p" class={size} >
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions >
-        {action}
-      </CardActions>
+        <Card sx={{ minWidth: 485, minHeight: 200,  borderRadius: 8, backgroundColor: color, color: "#f3e5f5" , marginTop:4 , padding:4}}>
+      <Stack >
+          <Box sx={{height:150}}>         
+            <CardContent>
+                <Typography variant="h5">
+                  {title}
+                </Typography>
+                <br/>
+                <Typography variant="p" class={size} >
+                  {description}
+                </Typography>
+              </CardContent>
+          </Box>
+          <Box sx={{height:50}}>
+              <CardActions >
+                {action}
+              </CardActions>
+          </Box>
+      </Stack>
+    
     </Card>
+
   );
 };
 

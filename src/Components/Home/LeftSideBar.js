@@ -45,8 +45,8 @@ const LeftSideBar = () => {
         <Card sx={{ minWidth: 485, minHeight: 300, borderRadius:10 }}>
       <CardContent>
         <Typography variant="h6" component="div" class="flex flex-row m-5">
-          <ErrorIcon color='primary'/>
-          <h1 class='pl-2 font-medium'>ISO 9001 pre</h1>
+          <ErrorIcon color='primary' sx={{ fontSize: '1.6rem' }}/>
+          <h1 class='pl-2 font-normal text-2xl'>ISO 9001 pre</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div>
@@ -76,8 +76,8 @@ const LeftSideBar = () => {
         <Card sx={{ minWidth:380 , minHeight :300 , borderRadius:10, marginLeft:8}}>
       <CardContent>
         <Typography variant="h6" component="div"  class="flex flex-row m-5">
-          <PermIdentityIcon color='primary'/>
-          <h1 class='pl-2 pb-8 font-medium'>Reputation level</h1>
+          <PermIdentityIcon color='primary' sx={{ fontSize: '1.6rem' }}/>
+          <h1 class='pl-2 pb-8 font-normal text-2xl'>Reputation level</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div className='grid grid-cols-3 gap-12 text-blue-800 text-center'>
@@ -105,13 +105,13 @@ const LeftSideBar = () => {
       <div className="flex flex-row">
       <Box
         sx={{display: 'flex',flexWrap: 'wrap','& > :not(style)': {width: 260,height: 400,marginTop:5,marginLeft:3},}}>
-        <Paper sx={{ backgroundColor: '#5c6bc0' }}>
+        <Paper sx={{ backgroundColor: '#1a237e' }}>
         <CardItem title="Order" price="187" value="+11%" icon={<AutoAwesomeMotionIcon/>} />
         </Paper>
-        <Paper sx={{ backgroundColor: '#ffb74d' }}>
+        <Paper sx={{ backgroundColor: '#ff8f00' }}>
         <CardItem title="Revenue" price="$460,50" value="29%" icon={<PollIcon/>} />
         </Paper>
-        <Paper sx={{ backgroundColor: '#5c6bc0' }}>
+        <Paper sx={{ backgroundColor: '#1a237e' }}>
         <CardItem title="Price" price="$59" value="+10%" icon={<SellIcon/>} />
         </Paper>
       </Box>

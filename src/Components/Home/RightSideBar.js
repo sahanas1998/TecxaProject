@@ -47,7 +47,7 @@ const RightSideBar = () => {
       </div>
       <div class="flex flex-row ...">
       <Box sx={{display: 'flex', marginTop:3, marginLeft:17,flexWrap: 'wrap','& > :not(style)': {width: 260,height: 270}}}>
-        <Paper sx={{ backgroundColor: '#5c6bc0' }}>
+        <Paper sx={{ backgroundColor: '#1a237e' }}>
         <CardItem title="Sold" price="1890" value="+11%" icon={<DataThresholdingIcon/>} />
         </Paper>
       </Box>
