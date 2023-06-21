@@ -21,6 +21,9 @@ import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 import PollIcon from '@mui/icons-material/Poll';
 import SellIcon from '@mui/icons-material/Sell';
 import { BorderAll } from '@mui/icons-material';
+import Img1 from '../../Assets/1.png'
+import Img2 from '../../Assets/2.png'
+import Img3 from '../../Assets/3.png'
 
 export const CardItem = ({ title, price, value , icon , color}) => {
   return (
@@ -50,8 +53,8 @@ const LeftSideBar = () => {
         </Typography>
         <Stack direction="row" spacing={2}>
           <div>
-          <Typography variant="body2">
-          <img src='https://us.123rf.com/450wm/rubelhossain/rubelhossain2010/rubelhossain201001483/157735065-diagramas-de-porcentaje-de-c%C3%ADrculo-del-98-porcentaje-del-98-listo-para-usar-para-dise%C3%B1o-web.jpg?ver=6' height="170" width="170"/>
+          <Typography>
+          <img src={Img1} height="170" width="170"/>
           </Typography>
           </div>
           <div className='grid grid-cols-2 gap-2 '>
@@ -88,14 +91,15 @@ const LeftSideBar = () => {
          <RecommendIcon/><h1 className='text-black pt-2'>Great Seller</h1>
         </Typography>
         <Typography variant="body2" component="div">
-          <StarsOutlinedIcon/><h1 className='text-black pt-2'>king Seller</h1>
+          <img src={Img3} height="25" width="25" class="ml-6"/>
+          <h1 className='text-black pt-2'>king Seller</h1>
         </Typography>
         </div>
          </Stack>
-         <div className='text-center'>
+         <div className='text-center pt-4'>
           <Typography variant="body2" component="div"  >
-          <img src='https://www.pngarts.com/files/10/Blue-Line-PNG-Background-Image.png' height="170" width="200"/>
-          <h6 className='text-black'>1 more positive feedback to reach Super Seller</h6>
+          <img src={Img2} height="200" width="350"/>
+          <h6 className='text-gray-500 pt-4'>1 more positive feedback to reach Super Seller</h6>
           </Typography>
           </div>
       </CardContent>
