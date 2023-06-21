@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import {useAuthState} from 'react-firebase-hooks/auth'
 import { signOut } from "@firebase/auth";
 import CameraIcon from '@mui/icons-material/Camera';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 
 const StyledAppBar = styled(AppBar)({
     backgroundColor: ' rgb(241 245 249)', // Change the background color here
@@ -56,10 +57,10 @@ const Navbar = () => {
                 <Link to="/resources" className={location.pathname === '/resources' ? 'underline' : ''}>Resources</Link>
                 <Link to="/subscription" className={location.pathname === '/subscription' ? 'underline' : ''}>Subscription</Link>
             </Box>
-            <Box sx={{display:'flex', alignItems:'center' , gap:'20px' }}>
+            <Box sx={{display:'flex', alignItems:'center' , gap:'20px'  }}>
             <SettingsOutlinedIcon/>
             <Badge color="warning" variant="dot" anchorOrigin={{vertical: 'top',horizontal: 'left',}}>
-               <NotificationsIcon/>
+               <NotificationsNoneOutlinedIcon />
             </Badge>
             {user && (
                         <>

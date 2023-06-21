@@ -22,16 +22,16 @@ import PollIcon from '@mui/icons-material/Poll';
 import SellIcon from '@mui/icons-material/Sell';
 import { BorderAll } from '@mui/icons-material';
 
-export const CardItem = ({ title, price, value , icon}) => {
+export const CardItem = ({ title, price, value , icon , color}) => {
   return (
-      <div>
+      <div class="font-light">
         <div className='pt-6 pl-6 flex items-center space-x-32 text-white'>
           <p>{title}</p>
           <p>{icon}</p>
         </div>
         <div className='pt-6 pl-6 pb-16 text-4xl'>
           <h1 className='text-white pb-4'>{price}</h1>
-          <Button variant="contained" color="inherit" sx={{borderRadius:20}}>{value}</Button>
+          <Button variant="contained" color="inherit" sx={{color:color, borderRadius:5 , fontWeight:5}}>{value}</Button>
       </div>
     </div>
   );
@@ -106,13 +106,13 @@ const LeftSideBar = () => {
       <Box
         sx={{display: 'flex',flexWrap: 'wrap','& > :not(style)': {width: 260,height: 400,marginTop:5,marginLeft:3},}}>
         <Paper sx={{ backgroundColor: '#1a237e' }}>
-        <CardItem title="Order" price="187" value="+11%" icon={<AutoAwesomeMotionIcon/>} />
+        <CardItem title="Order" price="187" value="+11%" icon={<AutoAwesomeMotionIcon/>} color="#1a237e" />
         </Paper>
         <Paper sx={{ backgroundColor: '#ff8f00' }}>
-        <CardItem title="Revenue" price="$460,50" value="29%" icon={<PollIcon/>} />
+        <CardItem title="Revenue" price="$460,50" value="29%" icon={<PollIcon/>} color="#ff8f00" />
         </Paper>
         <Paper sx={{ backgroundColor: '#1a237e' }}>
-        <CardItem title="Price" price="$59" value="+10%" icon={<SellIcon/>} />
+        <CardItem title="Price" price="$59" value="+10%" icon={<SellIcon/>} color="#1a237e" />
         </Paper>
       </Box>
     </div>
