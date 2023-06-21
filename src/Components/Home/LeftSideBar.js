@@ -48,13 +48,14 @@ const LeftSideBar = () => {
         <Card sx={{ minWidth: 485, minHeight: 300, borderRadius:10 }}>
       <CardContent>
         <Typography variant="h6" component="div" class="flex flex-row m-5">
-          <ErrorIcon color='primary' sx={{ fontSize: '1.6rem' }}/>
+          <ErrorIcon color='primary' sx={{ fontSize: '1.5rem' }}/>
           <h1 class='pl-2 font-normal text-2xl'>ISO 9001 pre</h1>
         </Typography>
         <Stack direction="row" spacing={2}>
           <div>
-          <Typography>
-          <img src={Img1} height="170" width="170"/>
+          <Typography  sx={{ fontSize: '0.6rem', paddingLeft:3 }}>
+          <img src={Img1} height="120" width="120"/>
+          <p className='text-gray-500 pt-3 font-thin'>You've completed 98% of your order</p>
           </Typography>
           </div>
           <div className='grid grid-cols-2 gap-2 '>
